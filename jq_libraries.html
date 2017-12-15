@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>jQ_Libraries</title>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script src="ResponsiveSlides.js-master/responsiveslides.min.js"></script>
+	<script src="t.js-master/t.min.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#demo_1').t({
+			blink:300,
+			caret:'<span style="color:blue;">\u2589</span>',
+			pause_on_click:true
+			});
+
+
+			console.log("jQuery is here");
+    		$(".rslides").responsiveSlides();
+
+		});
+	</script>
+	<style type="text/css">
+		h1{
+			text-align: center;
+		}
+		.rslides {
+			  position: relative;
+			  list-style: none;
+			  overflow: hidden;
+			  width: 100%;
+			  padding: 0;
+			  margin: 0;
+			  }
+
+			.rslides li {
+			  -webkit-backface-visibility: hidden;
+			  position: absolute;
+			  display: none;
+			  width: 100%;
+			  left: 0;
+			  top: 0;
+			  }
+
+			.rslides li:first-child {
+			  position: relative;
+			  display: block;
+			  float: left;
+			  }
+
+			.rslides img {
+			  display: block;
+			  height: auto;
+			  float: left;
+			  width: 50%;
+			  border: 0;
+			  margin-top: 120px;
+			  }
+	</style>
+	
+</head>
+<body>
+	<div>
+		<h1>jQuery Library Fun</h1>
+	</div>
+
+	<pre id="demo_1">
+		<del>~~~~~~~~~~~~~~~</del>
+		<ins>Microsoft(R) Windows 98
+    		(C)Copyright Microsoft Corp 1981-1998
+    		<hr>
+    
+	c:\></ins><ins>2</ins><kbd>cd tools</kbd>
+	<ins>c:\tools></ins><ins>1</ins><kbd>weather.exe "Seatttle, WA" -txt</kbd>
+	Connecting
+	<ins>1.5</ins>...<ins>2</ins>....
+	It's another<del> sunny</del> rainy day in <span style="color:hotpink;">Seattle, WA.</span> What a<del> bad</del> great day to code.<span class="spnnr" style="color:gold;display:inline-block;">&#9728;</span>
+	<ins>c:\tools></ins>
+	</pre>
+
+
+
+
+	<ul class="rslides">
+	  <li><img src="img/A.jpg" alt="jordan"></li>
+	  <li><img src="img/B.jpg" alt="jordan"></li>
+	  <li><img src="img/A-1.jpg" alt="jordan"></li>
+	</ul>
+
+</body>
+</html>
